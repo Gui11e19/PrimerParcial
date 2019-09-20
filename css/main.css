@@ -20,7 +20,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .src-only {
@@ -59,6 +59,95 @@ p{
     font-size: 1.6rem;
 }
 
+.big-hero{
+    height: 100%;
+    margin: 0;
+}
+
+.about.container{
+    display: grid;
+}
+.contact{
+    grid-area: contact;
+}
+
+.contract-form{
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 10px;
+    width: 100%;
+    grid-template-areas: ". contact input";
+    grid-gap: 1.5em; 
+}
+
+.input{
+    grid-area: input;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.menu li a:hover{
+    color:red;
+}
+
+.fas.fa-arrow-circle-down{
+    color: #0AC693;
+    font-size: 100px;
+    margin-bottom: 3rem;
+}
+
+.fab{
+    font-size: 100px;
+    margin: 10px;
+}
+
+
+
+.big-hero{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.big-hero .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 5rem 0rem 5rem;
+}
+
+section.about div.container{
+    display: grid;
+    grid-auto-columns:repeat(3, minmax(1fr, 2fr));
+    grid-auto-flow: dense;
+    margin: 0rem;
+    margin-right: 0px;
+
+}
+
+div.container h2{
+    grid-area: span 1 / span 2;
+    margin: 0rem;
+}
+
+.bio-info{
+    grid-area: span 1 / span 1;
+    margin: 0rem;
+}
+
+.contact{
+    grid-area: span 1 / span 1;
+    grid-column-start: contact;
+    grid-row-start: contact;
+    grid-row-end: contact; 
+    grid-column-end: contact;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Big area */
 .big-hero img {
     width: 150px;
@@ -81,10 +170,10 @@ p{
 .social-links{
     list-style: none;
     padding: 0;
-    margin-top: 3em;
+    margin-top: -3em;
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
 
 }
 
@@ -96,7 +185,8 @@ p{
 
 
 .green-area {
-    background-color: #0AC693; 
+    background-color: #0AC693;
+
 }
 
 
@@ -305,6 +395,93 @@ footer .social-links {
 
 
     /*TODO: FALTA CSS */
+    .big-hero{
+        height: 100%;
+        margin: 0;
+    }
+    
+    .about.container{
+        display: grid;
+    }
+    .contact{
+        grid-area: contact;
+    }
+    
+    .contract-form{
+        display: grid;
+        grid-template-columns: 10px 1fr 1fr 10px;
+        width: 100%;
+        grid-template-areas: ". contact input";
+        grid-gap: 1.5em; 
+    }
+    
+    .input{
+        grid-area: input;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    
+    .menu li a:hover{
+        color:red;
+    }
+    
+    .fas.fa-arrow-circle-down{
+        color: #0AC693;
+        font-size: 100px;
+        margin-bottom: 3rem;
+    }
+    
+    .fab{
+        font-size: 100px;
+        margin: 10px;
+    }
+    
+    
+    
+    .big-hero{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .big-hero .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem 5rem 0rem 5rem;
+    }
+    
+    section.about div.container{
+        display: grid;
+        grid-auto-columns:repeat(3, minmax(1fr, 2fr));
+        grid-auto-flow: dense;
+        margin: 0rem;
+        margin-right: 0px;
+    
+    }
+    
+    div.container h2{
+        grid-area: span 1 / span 2;
+        margin: 0rem;
+    }
+    
+    .bio-info{
+        grid-area: span 1 / span 1;
+        margin: 0rem;
+    }
+    
+    .contact{
+        grid-area: span 1 / span 1;
+        grid-column-start: contact;
+        grid-row-start: contact;
+        grid-row-end: contact; 
+        grid-column-end: contact;
+        justify-content: center;
+        align-items: center;
+    }
 } 
 
 @media only screen and (min-width: 1024px) {
@@ -312,6 +489,93 @@ footer .social-links {
        /*TODO: FALTA CSS */
 
 
+       .big-hero{
+        height: 100%;
+        margin: 0;
+    }
+    
+    .about.container{
+        display: grid;
+    }
+    .contact{
+        grid-area: contact;
+    }
+    
+    .contract-form{
+        display: grid;
+        grid-template-columns: 10px 1fr 1fr 10px;
+        width: 100%;
+        grid-template-areas: ". contact input";
+        grid-gap: 1.5em; 
+    }
+    
+    .input{
+        grid-area: input;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    
+    .menu li a:hover{
+        color:red;
+    }
+    
+    .fas.fa-arrow-circle-down{
+        color: #0AC693;
+        font-size: 100px;
+        margin-bottom: 3rem;
+    }
+    
+    .fab{
+        font-size: 100px;
+        margin: 10px;
+    }
+    
+    
+    
+    .big-hero{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .big-hero .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem 5rem 0rem 5rem;
+    }
+    
+    section.about div.container{
+        display: grid;
+        grid-auto-columns:repeat(3, minmax(1fr, 2fr));
+        grid-auto-flow: dense;
+        margin: 0rem;
+        margin-right: 0px;
+    
+    }
+    
+    div.container h2{
+        grid-area: span 1 / span 2;
+        margin: 0rem;
+    }
+    
+    .bio-info{
+        grid-area: span 1 / span 1;
+        margin: 0rem;
+    }
+    
+    .contact{
+        grid-area: span 1 / span 1;
+        grid-column-start: contact;
+        grid-row-start: contact;
+        grid-row-end: contact; 
+        grid-column-end: contact;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
@@ -322,5 +586,94 @@ footer .social-links {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
+        
+
     }
+
+.big-hero{
+    height: 100%;
+    margin: 0;
+}
+
+.about.container{
+    display: grid;
+}
+.contact{
+    grid-area: contact;
+}
+
+.contract-form{
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 10px;
+    width: 100%;
+    grid-template-areas: ". contact input";
+    grid-gap: 1.5em; 
+}
+
+.input{
+    grid-area: input;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.menu li a:hover{
+    color:red;
+}
+
+.fas.fa-arrow-circle-down{
+    color: #0AC693;
+    font-size: 100px;
+    margin-bottom: 3rem;
+}
+
+.fab{
+    font-size: 100px;
+    margin: 10px;
+}
+
+
+
+.big-hero{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.big-hero .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 5rem 0rem 5rem;
+}
+
+section.about div.container{
+    display: grid;
+    grid-auto-columns:repeat(3, minmax(1fr, 2fr));
+    grid-auto-flow: dense;
+    margin: 0rem;
+    margin-right: 0px;
+
+}
+
+div.container h2{
+    grid-area: span 1 / span 2;
+    margin: 0rem;
+}
+
+.bio-info{
+    grid-area: span 1 / span 1;
+    margin: 0rem;
+}
+
+
+
+.form{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 1em;
+}
 }
