@@ -9,6 +9,14 @@
     font-size: calc(0.5em + 1vh);
 }
 
+.fas.fa-arrow-circle-down{
+    color: #0AC693;
+    font-size: 60px;
+    margin-top: -8rem;
+    margin-bottom: 3rem;
+
+}
+
 /* El estilo base para moviles */
 body {
     background-color: #112935;
@@ -32,14 +40,20 @@ body {
 }
 
 p{
-    font-size: 0.75em;
+    font-size: 0.90em;
     padding: 1rem;
     line-height: 25px;
+    margin-top: -0.8rem;
+    
+}
+
+i.fa-bars{
+    margin: 0.5em 0.5em 0em 0rem;
 }
 
 .logo {
     width: 90px;
-    margin: 1em;
+    margin: 1em 0em 0em 2em;
 }
 
 .options {
@@ -51,7 +65,7 @@ p{
     font-size: 1.5rem;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap1440;
     align-items: flex-start;
 
 }
@@ -92,15 +106,10 @@ p{
     color:red;
 }
 
-.fas.fa-arrow-circle-down{
-    color: #0AC693;
-    font-size: 100px;
-    margin-bottom: 3rem;
-}
 
-.fab{
-    font-size: 100px;
-    margin: 10px;
+div.container ul.social-links li .fab{
+    font-size: 60px;
+    margin: 3rem 0px 0px 0px;
 }
 
 
@@ -111,26 +120,17 @@ p{
     
 }
 
-.big-hero .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 5rem 5rem 0rem 5rem;
-}
+
 
 section.about div.container{
-    display: grid;
-    grid-auto-columns:repeat(3, minmax(1fr, 2fr));
-    grid-auto-flow: dense;
-    margin: 0rem;
-    margin-right: 0px;
-
+    margin-bottom: 3rem;
 }
 
-div.container h2{
+section.big-hero div.container h2{
     grid-area: span 1 / span 2;
-    margin: 0rem;
+    margin: 2rem 0rem 0rem 0rem;
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 
 .bio-info{
@@ -151,11 +151,12 @@ div.container h2{
 /* Big area */
 .big-hero img {
     width: 150px;
+    margin-top: 2rem;
 }
 
 .big-hero h2 {
-    font-size: 1.875em;
-    font-weight: 700;
+    font-size: 1.8.big-hero h275em;
+    font-weight: 900;
     letter-spacing: 0.002em;
     margin-top: 1em ;
 }
@@ -167,20 +168,22 @@ div.container h2{
 }
 
 /* Social links*/
-.social-links{
+section.big-hero .social-links{
     list-style: none;
     padding: 0;
     margin-top: -3em;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 4rem;
 
 }
 
-.social-links li a{
+section.big-hero .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
-    font-size: 2.5em;
+    font-size: 0.5em;
+    margin: 0rem 1rem 0rem 0rem;
 }
 
 
@@ -203,6 +206,7 @@ div.container h2{
 
 .post ul {
     list-style: none;
+    padding: 0rem 2rem 0.6rem 2rem;
 }
 
 .post ul li {
@@ -245,7 +249,7 @@ div.container h2{
 /* About */
 
 .about{
-    margin-top: 2em;
+    padding: 0rem 2rem 0em 2rem; 
 }
 
 .about h2 {
@@ -253,8 +257,16 @@ div.container h2{
     font-weight: 700;
     font-size: 1.125em;
     margin: 2em;
+}div.container ul.socidiv.container ul.social-links li .fab{
+    font-size: 60px;
+    margin: 3rem 0px 0px 0px;
+}al-links li .fab{
+    font-size: 60px;
+    margin: 3rem 0px 0px 0px;
 }
-
+.contact label{
+    font-weight: bold;
+}
 .bio-info img{
    width: 200px;
 }
@@ -289,6 +301,32 @@ div.container h2{
     border-radius: 0px 2em;
     font-size: 1em;
     width: 100%;
+}
+
+footer .social-links{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0rem;
+
+}
+
+footer ul.social-links li .fab{
+    font-size: 60px;
+    margin: 1rem 1rem 0px;
+}
+
+footer p{
+    font-size: 0.6rem;
+}
+
+footer .social-links li a{
+    color: #D7DEE6;
+    text-decoration: none;
+    font-size:768 0.5em;
+    margin: 0rem 0rem 0rem 0rem;
 }
 
 /* Decorando placeholder */
@@ -352,7 +390,8 @@ footer .social-links {
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-  
+
+    
     .post ul {
         list-style: none;
         display: flex;
@@ -427,11 +466,7 @@ footer .social-links {
         color:red;
     }
     
-    .fas.fa-arrow-circle-down{
-        color: #0AC693;
-        font-size: 100px;
-        margin-bottom: 3rem;
-    }
+ 
     
     .fab{
         font-size: 100px;
@@ -451,21 +486,26 @@ footer .social-links {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 5rem 5rem 0rem 5rem;
+        margin: 1rem 5rem 2rem 5rem;
     }
     
     section.about div.container{
         display: grid;
-        grid-auto-columns:repeat(3, minmax(1fr, 2fr));
+        grid-auto-columns:repeat(2, minmax(1fr, 2fr));
         grid-auto-flow: dense;
         margin: 0rem;
         margin-right: 0px;
+        padding: 1rem 2rem 2.5rem 2rem;
     
     }
+
     
-    div.container h2{
+    
+    section.about div.container h2{
         grid-area: span 1 / span 2;
-        margin: 0rem;
+        margin: 5rem 0rem 0rem;
+        padding: 2rem 0rem 2rem;
+        
     }
     
     .bio-info{
@@ -521,11 +561,7 @@ footer .social-links {
         color:red;
     }
     
-    .fas.fa-arrow-circle-down{
-        color: #0AC693;
-        font-size: 100px;
-        margin-bottom: 3rem;
-    }
+
     
     .fab{
         font-size: 100px;
@@ -557,7 +593,7 @@ footer .social-links {
     
     }
     
-    div.container h2{
+    section.about div.container h2{
         grid-area: span 1 / span 2;
         margin: 0rem;
     }
@@ -622,11 +658,7 @@ footer .social-links {
     color:red;
 }
 
-.fas.fa-arrow-circle-down{
-    color: #0AC693;
-    font-size: 100px;
-    margin-bottom: 3rem;
-}
+
 
 .fab{
     font-size: 100px;
@@ -668,8 +700,6 @@ div.container h2{
     margin: 0rem;
 }
 
-
-
 .form{
     display:flex;
     flex-direction: column;
@@ -677,3 +707,5 @@ div.container h2{
     margin: 1em;
 }
 }
+
+
