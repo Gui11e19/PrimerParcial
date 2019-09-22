@@ -235,6 +235,7 @@ section.big-hero .social-links li a{
     object-fit: cover;
 }
 
+
 .post article h3 {
     color: #0D5061;
     margin-top: 2em;
@@ -289,6 +290,7 @@ social-links li .fab{
     letter-spacing: 2px;
 }
 
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -313,6 +315,7 @@ social-links li .fab{
     width: 100%;
 }
 
+/*Controla el footer y hace que los iconos salgan de manera de fila*/
 footer .social-links{
     list-style: none;
     padding: 0;
@@ -323,14 +326,17 @@ footer .social-links{
 
 }
 
+/*modifica el tamaño de los iconos del footer*/
 footer ul.social-links li .fab{
     font-size: 60px;
     margin: 1rem 1rem 0px;
 }
 
+/*Cambia el tamaño del texto del footer*/
 footer p{
     font-size: 0.6rem;
 }
+
 
 footer .social-links li a{
     color: #D7DEE6;
@@ -444,18 +450,24 @@ footer .social-links {
 
 
     /*TODO: FALTA CSS */
+
     .big-hero{
         height: 100%;
         margin: 0;
     }
     
+    /* hace que el contenedor del about se haga un grid */
     .about.container{
         display: grid;
     }
+
+    /*hace que el grid cubra todo cubra toda la caja*/
     .contact{
         grid-area: contact;
     }
-    
+
+
+    /* modifica la forma en about us*/
     .contract-form{
         display: grid;
         grid-template-columns: 10px 1fr 1fr 10px;
@@ -471,28 +483,26 @@ footer .social-links {
     
     }
     
-    
-    .menu li a:hover{
-        color:red;
-    }
-    
- 
-    
+    /* Modifica el tamaño de los iconos*/
     .fab{
         font-size: 100px;
         margin: 10px;
     }
     
+
     div.container .post ul{
         margin: 0 -1rem;
     }
     
+    /* hace que el big-hero se comporte como flex*/
     .big-hero{
         display: flex;
         justify-content: center;
         
     }
     
+    /*modifica lo que esta dentro del container para centrarlo vertical y 
+      horizontalmente*/
     .big-hero .container{
         display: flex;
         flex-direction: column;
@@ -501,6 +511,7 @@ footer .social-links {
         margin: 1rem 5rem 2rem 5rem;
     }
     
+    /*Crea el grid de about us y le da su padding*/
     section.about div.container{
         display: grid;
         grid-auto-columns:repeat(2, minmax(1fr, 1fr));
@@ -510,7 +521,8 @@ footer .social-links {
     }
 
     
-    
+    /* Hace que el titulo de about us quede en la parte de arriba
+       usando 2 filas*/
     section.about div.container h2{
         grid-area: span 1 / span 2;
         margin: 0.2rem 0rem 0rem;
@@ -518,11 +530,13 @@ footer .social-links {
         
     }
     
+    /* hace que la informacion quede al lado izq*/
     .bio-info{
         grid-area: span 1 / span 1;
         margin: 0rem;
     }
     
+    /* hace que la forma quede al lado der */
     .contact{
         grid-area: span 1 / span 1;
         grid-column-start: contact;
@@ -538,7 +552,7 @@ footer .social-links {
 
        /*TODO: FALTA CSS */
 
-
+    
        .big-hero{
         height: 100%;
         margin: 0;
@@ -634,6 +648,8 @@ footer .social-links {
         
 
     }
+
+    /*arregla los margenes del contenedor del about us*/
     section.about div.container{
         display: grid;
         grid-auto-columns:repeat(2, minmax(1fr, 1fr));
@@ -642,7 +658,8 @@ footer .social-links {
         padding-left: 5rem;
         padding-right: 15rem;
     }
-       
+    
+    /*arregla el margen del h2 en about us*/
     section.about div.container h2{
         grid-area: span 1 / span 2;
         margin-left: 12rem;
