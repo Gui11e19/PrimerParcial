@@ -109,7 +109,7 @@ i.fa-bars{
 
 div.container ul.social-links li .fab{
     font-size: 60px;
-    margin: 3rem 0px 0px 1rem;
+    margin: 3rem 1px 0px 1rem;
 }
 
 
@@ -155,7 +155,7 @@ section.big-hero div.container h2{
 }
 
 .big-hero h2 {
-    font-size: 1.8.big-hero h275em;
+    font-size: 1.8rem;
     font-weight: 900;
     letter-spacing: 0.002em;
     margin-top: 1em ;
@@ -183,7 +183,7 @@ section.big-hero .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
     font-size: 0.5em;
-    margin: 0rem 1rem 0rem 0rem;
+    margin: 0rem 1rem 0rem 1rem;
 }
 
 
@@ -257,11 +257,15 @@ section.big-hero .social-links li a{
     font-weight: 700;
     font-size: 1.125em;
     margin: 2em;
-}div.container ul.socidiv.container ul.social-links li .fab{
+}
+
+div.container ul.social-links li .fab{
     font-size: 60px;
     margin: 3rem 0px 0px 0px;
-}al-links li .fab{
-    font-size: 60px;
+}
+
+social-links li .fab{
+    font-size: 70px;
     margin: 3rem 0px 0px 0px;
 }
 .contact label{
