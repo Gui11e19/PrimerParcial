@@ -600,11 +600,9 @@ footer .social-links {
     }
     
     section.about div.container h2{
-        grid-area: span    
-        section.about div.container h2{
             grid-area: span 1 / span 2;
             margin-left: 12rem;
-        1 / span 2;
+       
     }
     
     .bio-info{
