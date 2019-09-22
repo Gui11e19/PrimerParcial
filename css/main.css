@@ -109,7 +109,7 @@ i.fa-bars{
 
 div.container ul.social-links li .fab{
     font-size: 60px;
-    margin: 3rem 0px 0px 0px;
+    margin: 3rem 0px 0px 1rem;
 }
 
 
@@ -129,7 +129,7 @@ section.about div.container{
 section.big-hero div.container h2{
     grid-area: span 1 / span 2;
     margin: 2rem 0rem 0rem 0rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
 }
 
@@ -249,7 +249,7 @@ section.big-hero .social-links li a{
 /* About */
 
 .about{
-    padding: 0rem 2rem 0em 2rem; 
+    padding: 0rem 1rem 0em 1rem; 
 }
 
 .about h2 {
@@ -402,7 +402,7 @@ footer .social-links {
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
-        margin: 1rem 2rem;
+        margin: 1rem 1rem;
         flex: 1 0 300px;
     }
 
@@ -473,7 +473,9 @@ footer .social-links {
         margin: 10px;
     }
     
-    
+    div.container .post ul{
+        margin: 0 -1rem;
+    }
     
     .big-hero{
         display: flex;
@@ -493,9 +495,7 @@ footer .social-links {
         display: grid;
         grid-auto-columns:repeat(2, minmax(1fr, 2fr));
         grid-auto-flow: dense;
-        margin: 0rem;
-        margin-right: 0px;
-        padding: 1rem 2rem 2.5rem 2rem;
+        padding: 1rem 0rem 2.5rem 0rem;    
     
     }
 
@@ -503,7 +503,7 @@ footer .social-links {
     
     section.about div.container h2{
         grid-area: span 1 / span 2;
-        margin: 5rem 0rem 0rem;
+        margin: 0.2rem 0rem 0rem;
         padding: 2rem 0rem 2rem;
         
     }
@@ -569,7 +569,6 @@ footer .social-links {
     }
     
     
-    
     .big-hero{
         display: flex;
         justify-content: center;
@@ -581,12 +580,12 @@ footer .social-links {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 5rem 5rem 0rem 5rem;
+        margin: 3rem 5rem 3rem 5rem;
     }
     
     section.about div.container{
         display: grid;
-        grid-auto-columns:repeat(3, minmax(1fr, 2fr));
+        grid-auto-columns:repeat(2, minmax(1fr, 2fr));
         grid-auto-flow: dense;
         margin: 0rem;
         margin-right: 0px;
