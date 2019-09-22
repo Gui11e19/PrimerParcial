@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: calc(0.5em + 1vh);
+
 }
 
 .fas.fa-arrow-circle-down{
@@ -497,7 +498,7 @@ footer .social-links {
     
     section.about div.container{
         display: grid;
-        grid-auto-columns:repeat(2, minmax(1fr, 2fr));
+        grid-auto-columns:repeat(2, minmax(1fr, 1fr));
         grid-auto-flow: dense;
         padding: 1rem 0rem 2.5rem 0rem;    
     
@@ -589,21 +590,18 @@ footer .social-links {
     
     section.about div.container{
         display: grid;
-        grid-auto-columns:repeat(2, minmax(1fr, 2fr));
+        grid-auto-columns:repeat(2, minmax(1fr, 1fr));
         grid-auto-flow: dense;
-        margin: 0rem;
-        margin-right: 0px;
-    
     }
     
     section.about div.container h2{
         grid-area: span 1 / span 2;
-        margin: 0rem;
     }
     
     .bio-info{
         grid-area: span 1 / span 1;
         margin: 0rem;
+        padding: 2rem 8rem;
     }
     
     .contact{
@@ -614,6 +612,7 @@ footer .social-links {
         grid-column-end: contact;
         justify-content: center;
         align-items: center;
+        margin-right: 5rem;
     }
 
 }
@@ -621,94 +620,26 @@ footer .social-links {
 @media only screen and (min-width: 1440px) {
 
     /*TODO: FALTA CSS */
-    .container {
-        width: 80%;
+    body>.container {
+        width: 90%;
         margin: 0 auto;
         max-width: 1440px;
         
 
     }
-
-.big-hero{
-    height: 100%;
-    margin: 0;
-}
-
-.about.container{
-    display: grid;
-}
-.contact{
-    grid-area: contact;
-}
-
-.contract-form{
-    display: grid;
-    grid-template-columns: 10px 1fr 1fr 10px;
-    width: 100%;
-    grid-template-areas: ". contact input";
-    grid-gap: 1.5em; 
-}
-
-.input{
-    grid-area: input;
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-.menu li a:hover{
-    color:red;
-}
-
-
-
-.fab{
-    font-size: 100px;
-    margin: 10px;
-}
-
-
-
-.big-hero{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.big-hero .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 5rem 5rem 0rem 5rem;
-}
-
-section.about div.container{
-    display: grid;
-    grid-auto-columns:repeat(3, minmax(1fr, 2fr));
-    grid-auto-flow: dense;
-    margin: 0rem;
-    margin-right: 0px;
-
-}
-
-div.container h2{
-    grid-area: span 1 / span 2;
-    margin: 0rem;
-}
-
-.bio-info{
-    grid-area: span 1 / span 1;
-    margin: 0rem;
-}
-
-.form{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin: 1em;
-}
+    section.about div.container{
+        display: grid;
+        grid-auto-columns:repeat(2, minmax(1fr, 1fr));
+        grid-auto-flow: dense;
+        margin: 0rem;
+        padding-left: 1rem;
+        padding-right: 15rem;
+    }
+       
+    section.about div.container h2{
+        grid-area: span 1 / span 2;
+        margin-left: 12rem;
+    }
 }
 
 
