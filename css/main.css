@@ -641,7 +641,7 @@ footer .social-links {
         grid-auto-columns:repeat(2, minmax(1fr, 1fr));
         grid-auto-flow: dense;
         margin: 0rem;
-        padding-left: 1rem;
+        padding-left: 5rem;
         padding-right: 15rem;
     }
        
@@ -649,6 +649,11 @@ footer .social-links {
         grid-area: span 1 / span 2;
         margin-left: 12rem;
     }
+    .bio-info{
+        padding: 0rem 8rem 0rem 8rem;
+    }
+
+
 }
 
 
